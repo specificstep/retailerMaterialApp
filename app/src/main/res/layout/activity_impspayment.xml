@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.DMT.IMPSPaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgImpsPaymentBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/imps_title"
+            app:fontFamily="@font/noto_sans_bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/actionbar_title_size"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_wallet" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/beneficiary_list_sender_detail"
+        android:textSize="@dimen/common_title_size"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:fontFamily="@font/noto_sans_bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_person1"/>
+
+        <TextView
+            android:id="@+id/txtImpsPaymentSenderName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="demo demo (2014562352)"
+            android:fontFamily="@font/noto_sans"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/common_content_size"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/textColorSecondary" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/beneficiary_list_beneficiary_detail"
+        android:textSize="@dimen/common_title_size"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        app:fontFamily="@font/noto_sans_bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_person1"/>
+
+        <TextView
+            android:id="@+id/txtImpsPaymentBeneficiaryName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="demo demo (2014562352)"
+            android:fontFamily="@font/noto_sans"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/common_content_size"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_dmt"
+            app:tint="@color/colorBlack"
+            tools:ignore="MissingPrefix" />
+
+        <TextView
+            android:id="@+id/txtImpsPaymentBeneficiaryBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Axis Bank"
+            android:fontFamily="@font/noto_sans"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/common_content_size"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/textColorSecondary" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:hintTextAppearance="@style/TextLabel">
+
+        <EditText
+            android:id="@+id/edtImpsPaymentAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_20_size"
+            android:fontFamily="@font/noto_sans_bold"
+            android:textStyle="bold"
+            android:inputType="number"
+            android:textColor="@color/colorBlack"
+            android:lines="1"
+            android:hint="@string/imps_amount" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnImpsTransactionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            app:fontFamily="@font/noto_sans"
+            android:textSize="@dimen/btn_small_text_size"
+            android:text="@string/dmt_transaction_list"
+            android:background="@drawable/curve_button_white"
+            android:textColor="@color/colorPrimary"/>
+
+        <Button
+            android:id="@+id/btnImpsSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.4"
+            app:fontFamily="@font/noto_sans"
+            android:textSize="@dimen/btn_small_text_size"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/submit"
+            android:background="@drawable/curve_button_colorprimary"
+            android:textColor="@color/colorWhite" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

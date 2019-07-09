@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.AllTransactionReportsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarAllTransactionReports"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:gravity="center_horizontal|center_vertical">
+
+                <ImageButton
+                    android:id="@+id/imgAllTransactionReportsBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_back"
+                    android:paddingRight="10dp"
+                    app:tint="@color/colorWhite"
+                    android:background="@null"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:id="@+id/imgAllTransactionReportsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:text="@string/title_transaction_report"
+                    app:fontFamily="@font/noto_sans_bold"
+                    android:textSize="@dimen/common_title_size"/>
+
+                <ImageButton
+                    android:id="@+id/imgAllTransactionReportsWallet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_wallet"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingRight="10dp"
+                    app:tint="@color/colorWhite"
+                    android:background="@null"
+                    tools:ignore="MissingPrefix" />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <!--<android.support.design.widget.TabLayout-->
+        <!--android:id="@+id/tabs"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+        <com.legendmohe.slidingdrawabletablayout.SlidingDrawableTabLayout
+            android:id="@+id/tabsAllTransactionReports"
+            app:tabTextColor="@color/colorPrimary"
+            app:tabSelectedTextColor="@android:color/white"
+            app:tabBackground="@android:color/transparent"
+            app:slidingBackground="@drawable/auto_main_tablayout_sliding_bg"
+            android:background="@drawable/auto_main_tablayout_bg"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/containerAllTransactionReports"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+</android.support.design.widget.CoordinatorLayout>

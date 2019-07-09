@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/icon_dmt" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DMT feature"
+            app:fontFamily="@font/noto_sans_bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/common_title_size"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            app:fontFamily="@font/noto_sans"
+            android:text="Easy to make Digital Monetary Transfer transaction"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"
+            android:textSize="@dimen/common_content_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>

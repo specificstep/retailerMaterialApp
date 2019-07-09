@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".ui.RecentTransactionActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_horizontal|center_vertical">
+
+        <ImageButton
+            android:id="@+id/imgRecentBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="10dp"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/imgRecentTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="@string/title_recent"
+            app:fontFamily="@font/noto_sans_bold"
+            android:textSize="@dimen/common_title_size"/>
+
+        <ImageButton
+            android:id="@+id/imgRecentSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_reload"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewRecentTransactionList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_animation_fall_down" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/nodata_found"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+</LinearLayout>

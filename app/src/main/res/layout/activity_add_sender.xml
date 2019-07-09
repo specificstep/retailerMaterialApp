@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".ui.DMT.AddSenderActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgAddSenderBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/add_sender_title"
+            app:fontFamily="@font/noto_sans_bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/actionbar_title_size"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_wallet" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:hintTextAppearance="@style/TextLabel"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp">
+
+                <EditText
+                    android:id="@+id/edtAddSenderFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/common_20_size"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:lines="1"
+                    android:hint="@string/add_sender_first_name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:hintTextAppearance="@style/TextLabel"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp">
+
+                <EditText
+                    android:id="@+id/edtAddSenderLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/common_20_size"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"
+                    android:lines="1"
+                    android:hint="@string/add_sender_last_name" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hintTextAppearance="@style/TextLabel"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:id="@+id/edtAddSenderMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_20_size"
+                android:inputType="number"
+                android:maxLength="10"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:lines="1"
+                android:hint="@string/add_sender_mobile" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hintTextAppearance="@style/TextLabel"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:id="@+id/edtAddSenderEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_20_size"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:lines="1"
+                android:hint="@string/add_sender_email" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hintTextAppearance="@style/TextLabel"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:id="@+id/edtAddSenderAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_20_size"
+                android:fontFamily="@font/noto_sans_bold"
+                android:inputType="textEmailAddress"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:lines="1"
+                android:hint="@string/add_sender_address" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hintTextAppearance="@style/TextLabel"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:id="@+id/edtAddSenderPincode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_20_size"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/colorBlack"
+                android:lines="1"
+                android:hint="@string/add_sender_pincode" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:hintTextAppearance="@style/TextLabel"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp">
+
+            <EditText
+                android:id="@+id/edtAddSenderDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/common_20_size"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:lines="1"
+                android:hint="@string/add_sender_dob" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btnAddSenderCancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="10dp"
+                android:fontFamily="@font/noto_sans"
+                android:background="@drawable/curve_button_white"
+                android:text="@string/cancel"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/btn_small_text_size" />
+
+            <Button
+                android:id="@+id/btnAddSenderSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/noto_sans"
+                android:background="@drawable/curve_button_colorprimary"
+                android:text="@string/submit"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/btn_small_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

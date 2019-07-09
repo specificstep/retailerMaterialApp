@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.MobilePrepaidPaymentActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgMobPrepaidPaymentBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="@string/mob_prepaid_recharge_title"
+            app:fontFamily="@font/noto_sans_bold"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/actionbar_title_size"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_wallet" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle_border_grey_fill"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="90dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtMobPrepaidPaymentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/noto_sans"
+                    android:text="Vodafone"
+                    android:textSize="@dimen/common_instruction_size" />
+
+                <TextView
+                    android:id="@+id/txtMobPrepaidPaymentNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/noto_sans_bold"
+                    android:textStyle="bold"
+                    android:text="554545454544"
+                    android:textColor="@color/colorBlack"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/common_title_size" />
+
+                <TextView
+                    android:id="@+id/txtMobPrepaidPaymentDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/noto_sans"
+                    android:text="Prepaid, Airtel Punjab"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/common_midium_size" />
+
+                <TextView
+                    android:id="@+id/txtMobPrepaidPaymentChangeOperator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:fontFamily="@font/noto_sans"
+                    android:text="@string/mob_prepaid_recharge_change_operator"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginTop="10dp"
+                    android:textSize="@dimen/common_instruction_size" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/round_grey_border_fill"
+                android:elevation="2dp"
+                android:padding="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/ic_wallpaper" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="20dp">
+
+            <EditText
+                android:id="@+id/edtMobPrepaidPaymentAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.8"
+                android:background="@android:color/transparent"
+                android:inputType="number"
+                app:fontFamily="@font/noto_sans_bold"
+                android:maxLength="10"
+                android:textStyle="bold"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/common_max_size"
+                android:hint="@string/mob_prepaid_recharge_amount_hint"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1.2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mob_prepaid_recharge_offer_detail"
+                    app:fontFamily="@font/noto_sans"
+                    android:textSize="@dimen/common_8_size"
+                    android:textAlignment="textEnd" />
+
+                <TextView
+                    android:id="@+id/txtMobPrepaidPaymentBrowsePlan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mob_prepaid_recharge_browse_plans"
+                    app:fontFamily="@font/noto_sans_bold"
+                    android:textSize="@dimen/common_instruction_size"
+                    android:textColor="@color/colorPrimary"
+                    android:textAlignment="textEnd"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnMobPrepaidPaymemtRecharge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curve_button_colorprimary"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/proceed_to_recharge"
+        app:fontFamily="@font/noto_sans"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/btn_small_text_size"/>
+
+    </LinearLayout>
+
+</LinearLayout>

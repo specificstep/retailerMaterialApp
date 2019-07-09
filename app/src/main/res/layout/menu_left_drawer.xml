@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_launcher"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/txtNavigationUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="rerererere rerere"
+                app:fontFamily="@font/noto_sans"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/navigation_drawer_title_text"/>
+
+            <TextView
+                android:id="@+id/txtNavigationMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4444444444"
+                app:fontFamily="@font/noto_sans"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/navigation_drawer_content_text"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingStart="24dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorWhite"
+        android:text="@string/wallet_amount"
+        app:fontFamily="@font/noto_sans"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1000000"
+            app:fontFamily="@font/noto_sans"
+            android:textColor="@color/colorWhite"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+</LinearLayout>

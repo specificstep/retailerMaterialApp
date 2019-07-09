@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/lnrPopularPlan"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/lnrPopularPlanAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/curve_button_white"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:backgroundTint="@color/colorGrey">
+
+            <TextView
+                android:id="@+id/txtPopularPlanAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1699"
+                android:textSize="@dimen/common_title_size"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:fontFamily="@font/noto_sans_bold"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtPopularPlanValidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Validity 365 Days"
+            android:textSize="@dimen/common_midium_size"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:fontFamily="@font/noto_sans_bold"/>
+
+        <LinearLayout
+            android:id="@+id/lnrPopularPlanSelect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_small_border_colorprimary"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/select"
+                android:textSize="@dimen/common_content_size"
+                android:textColor="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_wifi"
+                        app:tint="@color/textColorSecondary"
+                        tools:ignore="MissingPrefix" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/data"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:textSize="@dimen/common_midium_size"
+                        android:textColor="@color/textColorSecondary" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtPopularPlanData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1GB / Day"
+                    android:fontFamily="@font/noto_sans"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/common_midium_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_mail"
+                        app:tint="@color/textColorSecondary"
+                        tools:ignore="MissingPrefix" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sms"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/noto_sans"
+                        android:textSize="@dimen/common_midium_size"
+                        android:textColor="@color/textColorSecondary" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtPopularPlanSms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="100SMS / Day"
+                    android:fontFamily="@font/noto_sans"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/common_midium_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/rltPopularPlanDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/txtPopularPlanDetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3G/4G Data: 1GB / Day Local STD and Roaming Calls: Unlimited. SMS: 100 SMS / Day. Vodafone Play App"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/colorBlack"
+                android:layout_marginRight="30dp" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_arrow"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/colorGrey"/>
+
+</LinearLayout>

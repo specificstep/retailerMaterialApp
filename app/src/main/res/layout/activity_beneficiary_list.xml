@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.DMT.BeneficiaryListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:gravity="center_horizontal|center_vertical">
+
+        <ImageButton
+            android:id="@+id/imgBeneficiaryListBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="10dp"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/imgBeneficiaryListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="@string/beneficiary_list_title"
+            app:fontFamily="@font/noto_sans_bold"
+            android:textSize="@dimen/common_title_size"/>
+
+        <ImageButton
+            android:id="@+id/imgBeneficiaryListSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wallet"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/beneficiary_list_sender_detail"
+            android:textSize="@dimen/common_title_size"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:fontFamily="@font/noto_sans_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_person1"/>
+
+            <TextView
+                android:id="@+id/txtBeneficiaryListSenderName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="demo demo (2014562352)"
+                android:fontFamily="@font/noto_sans"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/common_content_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_mobile"
+                app:tint="@color/colorBlack"
+                tools:ignore="MissingPrefix" />
+
+            <TextView
+                android:id="@+id/txtBeneficiaryListSenderMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="demo demo (2014562352)"
+                android:fontFamily="@font/noto_sans"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/common_content_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_cake"/>
+
+            <TextView
+                android:id="@+id/txtBeneficiaryListSenderDob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="demo demo (2014562352)"
+                android:fontFamily="@font/noto_sans"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/common_content_size"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/textColorSecondary" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/beneficiary_list_beneficiary_detail"
+            android:layout_marginTop="15dp"
+            android:textSize="@dimen/common_title_size"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            app:fontFamily="@font/noto_sans_bold" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rcvBeneficiaryList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layoutAnimation="@anim/layout_animation_fall_down" />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fabBeneficiaryList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add"
+        app:tint="@color/colorWhite"
+        app:backgroundTint="@color/colorPrimary"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="15dp" />
+
+</FrameLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/icon_pay" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lets get started"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            app:fontFamily="@font/noto_sans_bold"
+            android:textSize="@dimen/common_title_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:text="Never a better time than now to start thinking about how you manage all your finances with ease."
+            app:fontFamily="@font/noto_sans"
+            android:textColor="@color/colorBlack"
+            android:textAlignment="center"
+            android:textSize="@dimen/common_content_size" />
+
+    </LinearLayout>
+
+</RelativeLayout>

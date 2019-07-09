@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".ui.AccountLedgerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="center_horizontal|center_vertical">
+
+        <ImageButton
+            android:id="@+id/imgAcledgerBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="10dp"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/imgAcledgerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="@string/title_acledger"
+            app:fontFamily="@font/noto_sans_bold"
+            android:textSize="@dimen/common_title_size"/>
+
+        <ImageButton
+            android:id="@+id/imgAcledgerSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wallet"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="2">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_colorprimary_border"
+                android:padding="10dp"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100000"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:textSize="@dimen/common_title_size"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acledger_opening_balance"
+                android:fontFamily="@font/noto_sans"
+                android:background="@color/colorBackground"
+                android:textSize="@dimen/common_content_size"
+                android:layout_gravity="center_horizontal" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle_colorprimary_border"
+                android:padding="10dp"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="100000"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:textSize="@dimen/common_title_size"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/acledger_closing_balance"
+                android:fontFamily="@font/noto_sans"
+                android:background="@color/colorBackground"
+                android:textSize="@dimen/common_content_size"
+                android:layout_gravity="center_horizontal" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerViewAcledger"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layoutAnimation="@anim/layout_animation_fall_down"/>
+
+        <ImageView
+            android:id="@+id/imgAcledgerNoData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/nodata_found"
+            android:visibility="gone"/>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabAcledger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_filter"
+            app:tint="@color/colorWhite"
+            app:backgroundTint="@color/colorPrimary"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="15dp" />
+
+    </FrameLayout>
+
+</LinearLayout>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".ui.DMT.TransactionListDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:gravity="center_horizontal|center_vertical">
+
+        <ImageButton
+            android:id="@+id/imgTransactionDetailBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back"
+            android:layout_marginLeft="15dp"
+            android:paddingRight="10dp"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/imgTransactionDetailTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:text="@string/transaction_detail_title"
+            app:fontFamily="@font/noto_sans_bold"
+            android:textSize="@dimen/common_title_size"/>
+
+        <ImageButton
+            android:id="@+id/imgTransactionDetailSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wallet"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnrDmtDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgDmtDetailCompany"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/round_grey_border_fill"
+                android:elevation="2dp"
+                android:padding="20dp"
+                android:src="@drawable/ic_wallpaper" />
+
+            <TextView
+                android:id="@+id/txtDmtDetailStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/colorBlack"
+                android:text="DMT Transaction Success"
+                android:fontFamily="@font/noto_sans"
+                android:textSize="@dimen/common_title_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDmtDetailAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Rs. 10"
+                    android:fontFamily="@font/noto_sans_bold"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/common_title_size"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgDmtDetailIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_check"
+                    app:tint="@color/colorGreen"
+                    android:layout_marginLeft="10dp"
+                    tools:ignore="MissingPrefix" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtDmtDetailDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/noto_sans"
+                android:text="03-Jul-2019 04:48 PM"
+                android:layout_marginTop="5dp" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/textColorSecondary" />
+
+            <TextView
+                android:id="@+id/txtDmtDetailSenderName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/noto_sans"
+                android:text="4444444444 (demo demo)"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/common_content_size" />
+
+            <LinearLayout
+                android:id="@+id/lnrDmtDetailDownload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_download"
+                    android:tint="@color/colorPrimaryDark" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/recharge_status_download"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/common_content_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/textColorSecondary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dmt_detail_title"
+                android:textColor="@color/colorBlack"
+                android:fontFamily="@font/noto_sans_bold"
+                android:textSize="@dimen/common_title_size"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/receive"
+                    android:tint="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/txtDmtDetailBeneficiaryName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/noto_sans"
+                    android:text="9999999999 (tttt tt)"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/common_content_size" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_dmt"
+                    android:tint="@color/colorBlack" />
+
+                <TextView
+                    android:id="@+id/txtDmtDetailBankName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/noto_sans"
+                    android:text="AXIS BANK"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/common_content_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtDmtDetailTransactionId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/noto_sans"
+                android:text="Transaction Id: 432544654545645454"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/common_instruction_size" />
+
+            <TextView
+                android:id="@+id/txtDmtDetailOperatorId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/noto_sans"
+                android:text="Operator Id: 32545646465"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/common_instruction_size"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/lnrDmtDetailFees"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="5dp"
+                            android:text="@string/dmt_fees"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:fontFamily="@font/noto_sans_bold"
+                            android:textSize="@dimen/common_content_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtDmtDetailFees"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:padding="5dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:text="8.47"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/common_content_size" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="5dp"
+                            android:text="@string/dmt_gst"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/noto_sans_bold"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/common_content_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtDmtDetailGst"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:padding="5dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:text="1.53"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/common_content_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorWhite" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="5dp"
+                            android:text="@string/dmt_tds"
+                            android:textAlignment="center"
+                            android:fontFamily="@font/noto_sans_bold"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/common_content_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtDmtDetailTds"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:padding="5dp"
+                            android:text="0.02"
+                            android:fontFamily="@font/noto_sans"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/common_content_size" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorWhite" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorPrimaryDark"
+                            android:padding="5dp"
+                            android:fontFamily="@font/noto_sans_bold"
+                            android:text="@string/dmt_commission"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/common_content_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txtDmtDetailCommission"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/colorWhite"
+                            android:padding="5dp"
+                            android:fontFamily="@font/noto_sans"
+                            android:text="0.50"
+                            android:textAlignment="center"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/common_content_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

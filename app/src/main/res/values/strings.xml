@@ -1,0 +1,143 @@
+<resources>
+    <string name="app_name">retailerMaterialApp</string>
+
+    <!-- App Tour screen -->
+    <string name="app_tour_login_email">Login with Email</string>
+    <string name="app_tour_login_mobile">Login with Mobile No</string>
+
+    <!-- Registration screen -->
+    <string name="register_title">Registration</string>
+    <string name="register_message">Enter your mobile number, we will send you OTP to verify</string>
+    <string name="register_email_message">Enter your Email Id, we will send you OTP to verify</string>
+    <string name="register_hint">Mobile No</string>
+    <string name="register_email_hint">Email Id</string>
+    <string name="register_continue">Continue</string>
+
+    <!-- Otp verification screen -->
+    <string name="otp_title">Verification</string>
+    <string name="otp_message">Enter 4 digit number that sent to</string>
+
+    <!-- Register success dialog -->
+    <string name="register_success_cong">Congratulation</string>
+    <string name="register_success_msg">Now you are registered</string>
+    <string name="register_success_start_now">Start Now</string>
+
+    <!-- Company List screen -->
+    <string name="company_list_select_provider">Select Provider</string>
+
+    <!-- Screen Titles -->
+    <string name="title_provider_list">Provider</string>
+    <string name="title_bill_details">Bill details</string>
+    <string name="title_recent">Recent Transaction</string>
+    <string name="title_acledger">Account Ledger</string>
+    <string name="title_payment_report">Payment Report</string>
+    <string name="title_transaction_report">Transaction Report</string>
+
+    <!-- Bill Details screen -->
+    <string name="bill_detail_mobile">Mobile No</string>
+    <string name="bill_detail_amount">Amount</string>
+    <string name="bill_detail_instruction">Please enter a valid 10 digit Mobile No</string>
+    <string name="bill_detail_recharge">Recharge</string>
+
+    <!-- Recent List -->
+    <string name="help">Help</string>
+    <string name="view_all">View All</string>
+
+    <!-- Home Screen -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="wallet_amount">Wallet Amount</string>
+
+    <!-- Account Ledger screen -->
+    <string name="acledger_opening_balance">Opening Balance</string>
+    <string name="acledger_closing_balance">Closing Balance</string>
+
+    <!-- Filter screen -->
+    <string name="cashbook_filter_duration">Durations</string>
+    <string name="cashbook_filter_wallet">Wallets</string>
+    <string name="title_activity_combine_transaction_list">CombineTransactionListActivity</string>
+    <string name="filter">Filter By</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="reset">Reset</string>
+    <string name="str_search">Search</string>
+
+    <!-- Mobile Prepaid recharge screen -->
+    <string name="mob_prepaid_recharge_title">Mobile Prepaid Recharge</string>
+    <string name="mob_prepaid_recharge_search">Search</string>
+    <string name="mob_prepaid_recharge_clear">Clear</string>
+    <string name="mob_prepaid_recharge_change_operator">Change Operator</string>
+    <string name="mob_prepaid_recharge_amount_hint">\u20B9 Amount</string>
+    <string name="mob_prepaid_recharge_offer_detail">Now avail Best Offers For You</string>
+    <string name="mob_prepaid_recharge_browse_plans">Browse Plans</string>
+    <string name="proceed_to_recharge">Proceed to Recharge</string>
+    <string name="select_operator">Select an Operator</string>
+    <string name="select_circle">Select a Circle</string>
+    <string name="browse_plan_search_hint">Search Plan Amount, Talktime</string>
+    <string name="rs">\u20B9</string>
+    <string name="select">Select</string>
+    <string name="select_plan">Select Plan</string>
+    <string name="data">DATA</string>
+    <string name="sms">SMS</string>
+    <string name="plan_detail">Plan Details</string>
+    <string name="description">Description</string>
+
+    <!-- DMT Sender Search pages -->
+    <string name="sender_search_title">Sender Search</string>
+
+    <!-- DMT Add Sender pages -->
+    <string name="add_sender_title">Add Sender</string>
+    <string name="add_sender_first_name">First Name *</string>
+    <string name="add_sender_last_name">Last Name *</string>
+    <string name="add_sender_mobile">Mobile Number *</string>
+    <string name="add_sender_email">Email Address</string>
+    <string name="add_sender_address">Address</string>
+    <string name="add_sender_pincode">Pincode *</string>
+    <string name="add_sender_dob">Date Of Birth *</string>
+
+    <!-- Add Beneficiary -->
+    <string name="add_beneficiary_title">Add Beneficiary</string>
+    <string name="add_beneficiary_first_name">First Name *</string>
+    <string name="add_beneficiary_last_name">Last Name *</string>
+    <string name="add_beneficiary_mobile">Mobile Number *</string>
+    <string name="add_beneficiary_account_number">Account Number *</string>
+    <string name="add_beneficiary_bank">Bank Name *</string>
+    <string name="add_beneficiary_ifsc">IFSC Code *</string>
+    <string name="add_beneficiary_account_type">Account Type *</string>
+
+    <!-- Beneficiary List -->
+    <string name="beneficiary_list_title">DMT Beneficiary List</string>
+    <string name="beneficiary_list_sender_detail">Sender Details</string>
+    <string name="beneficiary_list_beneficiary_detail">Beneficiary Details</string>
+    <string name="beneficiary_list_imps">IMPS</string>
+    <string name="beneficiary_list_delete">DELETE</string>
+    <string name="beneficiary_list_verified">VERIFIED</string>
+    <string name="beneficiary_list_verify">VERIFY</string>
+
+    <!-- Sender Otp Verification -->
+    <string name="sender_otp_title">Sender Verification</string>
+
+    <!-- DMT IMPS Payment -->
+    <string name="imps_amount">Amount *</string>
+    <string name="imps_title">DMT Payment</string>
+
+    <!-- DMT Transaction List -->
+    <string name="dmt_transaction_list">DMT Transaction List</string>
+
+    <!-- Transaction Detail -->
+    <string name="transaction_detail_title">Transaction Detail</string>
+    <string name="recharge_status_recharge_again">Recharge Again</string>
+    <string name="recharge_status_download">Download Receipt</string>
+    <string name="dmt_detail_title">DMT Transaction Detail</string>
+    <string name="dmt_fees">Fees</string>
+    <string name="dmt_gst">GST</string>
+    <string name="dmt_tds">TDS</string>
+    <string name="dmt_commission">Commission</string>
+
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

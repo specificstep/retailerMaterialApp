@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plan_detail"
+            android:textSize="@dimen/common_20_size"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:fontFamily="@font/noto_sans_bold" />
+
+        <ImageButton
+            android:id="@+id/imgDialogPlanDetailCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_cancel_big"
+            android:background="@null"
+            app:tint="@color/colorBlack"
+            tools:ignore="MissingPrefix"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtDialogPlanDetailAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1699"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/noto_sans_bold"
+        android:textSize="@dimen/common_20_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGrey"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_wifi"
+                    app:tint="@color/textColorSecondary"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/data"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/noto_sans"
+                    android:textSize="@dimen/common_midium_size"
+                    android:textColor="@color/textColorSecondary" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtDialogPlanDetailData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1GB / Day"
+                android:fontFamily="@font/noto_sans"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/common_midium_size" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_mail"
+                    app:tint="@color/textColorSecondary"
+                    tools:ignore="MissingPrefix" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sms"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/noto_sans"
+                    android:textSize="@dimen/common_midium_size"
+                    android:textColor="@color/textColorSecondary" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtDialogPlanDetailSms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100SMS / Day"
+                android:fontFamily="@font/noto_sans"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/common_midium_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:fontFamily="@font/noto_sans"
+        android:textColor="@color/textColorSecondary"
+        android:layout_marginRight="30dp" />
+
+    <TextView
+        android:id="@+id/txtDialogPlanDetailDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="3G/4G Data: 1GB / Day Local STD and Roaming Calls: Unlimited. SMS: 100 SMS / Day. Vodafone Play App"
+        android:fontFamily="@font/noto_sans"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/colorBlack"
+        android:layout_marginRight="30dp" />
+
+    <Button
+        android:id="@+id/btnDialogPlanDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/select_plan"
+        android:background="@drawable/curve_button_colorprimary"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/btn_small_text_size"
+        android:fontFamily="@font/noto_sans"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="20dp"/>
+
+</LinearLayout>

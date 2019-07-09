@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/lnrRechargeContactList"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp">
+
+    <LinearLayout
+        android:id="@+id/lnrContactListTitle"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/round_grey_border_fill"
+        android:src="@drawable/ic_wallpaper"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:elevation="2dp">
+
+        <TextView
+            android:id="@+id/txtContactListTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/common_title_size"
+            android:fontFamily="@font/noto_sans"
+            android:textAlignment="center"
+            android:text="A"
+            android:textColor="@color/colorWhite"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="15dp">
+
+        <TextView
+            android:id="@+id/txtContactListName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Animal"
+            android:fontFamily="@font/noto_sans"
+            android:textSize="@dimen/common_title_size"
+            android:textColor="@color/colorBlack"/>
+
+        <TextView
+            android:id="@+id/txtContactListNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="123456"
+            android:fontFamily="@font/noto_sans"
+            android:textSize="@dimen/common_content_size" />
+
+    </LinearLayout>
+
+</LinearLayout>

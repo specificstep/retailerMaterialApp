@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="ld_activityScreenTitles">
+        <item>Home</item>
+        <item>Mobile Prepaid Recharge</item>
+        <item>Mobile Postpaid Recharge</item>
+        <item>DTH Recharge</item>
+        <item>DMT</item>
+        <item>Electricity Bill pay</item>
+        <item>Gas Bill pay</item>
+        <item>Water Bill pay</item>
+        <item>Recent Transaction</item>
+        <item>Complain Report</item>
+        <item>Account Ledger</item>
+        <item>Transaction Reports</item>
+        <item>Payment Request</item>
+        <item>Parent User</item>
+        <item>Change Password</item>
+        <item>Notification</item>
+        <item>Share</item>
+        <item>Login with Other number</item>
+        <item>Update Data</item>
+        <item>Log Out</item>
+    </string-array>
+
+    <array name="ld_activityScreenIcons">
+        <item>@drawable/ic_home</item>
+        <item>@drawable/ic_mobile</item>
+        <item>@drawable/mobile</item>
+        <item>@drawable/dth</item>
+        <item>@drawable/ic_dmt</item>
+        <item>@drawable/ic_electricity2</item>
+        <item>@drawable/gas</item>
+        <item>@drawable/tap</item>
+        <item>@drawable/ic_recent</item>
+        <item>@drawable/ic_complain</item>
+        <item>@drawable/ic_chrome_acledger</item>
+        <item>@drawable/ic_transaction_report</item>
+        <item>@drawable/ic_payment_on_black_24dp</item>
+        <item>@drawable/ic_parent_user</item>
+        <item>@drawable/ic_menu_change_password</item>
+        <item>@drawable/ic_notifications_black_24dp</item>
+        <item>@drawable/ic_share_black_24dp</item>
+        <item>@drawable/ic_person1</item>
+        <item>@drawable/ic_update_button</item>
+        <item>@drawable/ic_cancel</item>
+    </array>
+
+</resources>
